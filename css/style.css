@@ -63,12 +63,11 @@ h3 {
 #myPicture {
     border: 3px solid black;
     border-radius: 100%;
-    transition: .5s;
+    transition: 1.5s;
 }
 
 #myPicture:hover {
     transform: scale(1.02) rotate(360deg);
-    transition: 1s;
 }
 
 .headList {
