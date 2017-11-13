@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <title>Andrew J. Borkowski</title>
         
@@ -8,37 +9,41 @@
         <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
         
-        <!-- Adds Bootstrap to page via link. I want it included in my files.
-        <link rel="stylesheet" href="//maxcdn.bootstrap.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-        -->
+        <!-- Adds Bootstrap to page via link. I want it included in my files,
+                because it seems to take a while to load in Live Preview, which
+                may translate to long loading times online (not tested).
+
+        <link rel="stylesheet" href="//maxcdn.bootstrap.com/bootstrap/3.3.1/css/bootstrap.min.css" /> -->
     </head>
     
     <body class="container-fluid">
+        
         <div class="container">
             
-            <div class="head section">
+            <header class="head section">
                 <div class="picturePos">
-                    <img id="myPicture" src="./images/me01.jpg" height="180" />
+                    <img id="myPicture" src="./images/me01.jpg" height="180" alt="Andrew's dumb face"/>
                 </div>
                 <div class="basicInfo">
                     <h1>Andrew J. Borkowski</h1>
-                    <h3>Fullstack Web Developer in Training</h3>
+                    <h2>Fullstack Web Developer in Training</h2>
                     <ul class="headList">
                         <li>Inspired by Virtual Reality and its possible applications</li>
                         <li>Indie Game Designer as a hobby</li>
                         <li>Programmer by trade (Well, not yet..)</li>
                     </ul>
                 </div>
-            </div>
-            <div class="about section">
-                <div class="bio">
-                    <h2>About Me</h2>
-                    <p>My journey in learning web development started when I was about thirteen years old. This is when I was first introduced to MySpace (social-networking also). Soon I became interested in customizing my own profile page and started scanning the web for page styles that I was liked. In time, I wasn't satisfyed with what was provided anymore and desired a little more control over how my page was displayed. Eventually I dared to tweek the codes that I found, did the "save, reload, observe the change" over and over until I had a basic understanding on how to manipulate it to do what I wanted. Back then I didn't see it as "web development", but instead a way to express myself on the web.<br><br>
-                    From what I can gather (due to my lack of ever keeping records), I rebooted my interest in creating my own page years later and started doing some research in doing so. I came across many "free website" hosts that didn't require you to know any code to build your own page. At first I didn't mind having limited control and a URL that contained the hosts name within it, but soon wanted everything to be my own work - from scratch. Coming at the realization that getting my own URL would cost me money that I did not have, I turned to learning what was needed to make my own websites for free. I came across sites like <a href="http://www.codecademy.com" target="_blank">[Codecademy]</a>, <a href="http://www.khanacademy.org" target="_blank">[KhanAcademy]</a>, and many others that worked as an introduction or reference in writing your own HTML, CSS, JavaScript, and more computer languages. I clocked in many hours at these sites though struggled getting past the "tutorial phase" to making my own content, so I strayed away for a while.<br><br>
-                    Now I've come across a dream of being a creator of many things, most of which are digital or done digitally. I've expanded my interest from web development to application, game, and even hardware develpment. In recent years, I've done a lot of research and practiced a lot of skills and still feel very inadequate in the realm of programming. A good friend of mine introduced me to a path in which my core programming abilities could exponentially grow in the period of 3 months that will even land me a job as a developer or even a contractor. So for now, this is my main focus.</p>
-                </div>
-            </div>
-            <div class="progress section">
+            </header>
+            
+            <section class="about section ani">
+                <h2>About Me</h2>
+                <p>My journey in learning web development started when I was about thirteen years old. This is when I was first introduced to MySpace (social-networking also). Soon I became interested in customizing my own profile page and started scanning the web for page styles that I was liked. In time, I wasn't satisfyed with what was provided anymore and desired a little more control over how my page was displayed. Eventually I dared to tweek the codes that I found, did the "save, reload, observe the change" over and over until I had a basic understanding on how to manipulate it to do what I wanted. Back then I didn't see it as "web development", but instead a way to express myself on the web.<br><br>
+                From what I can gather (due to my lack of ever keeping records), I rebooted my interest in creating my own page years later and started doing some research in doing so. I came across many "free website" hosts that didn't require you to know any code to build your own page. At first I didn't mind having limited control and a URL that contained the hosts name within it, but soon wanted everything to be my own work - from scratch. Coming at the realization that getting my own URL would cost me money that I did not have, I turned to learning what was needed to make my own websites for free. I came across sites like <a href="http://www.codecademy.com" target="_blank">[Codecademy]</a>, <a href="http://www.khanacademy.org" target="_blank">[KhanAcademy]</a>, and many others that worked as an introduction or reference in writing your own HTML, CSS, JavaScript, and more computer languages. I clocked in many hours at these sites though struggled getting past the "tutorial phase" to making my own content, so I strayed away for a while.<br><br>
+                Now I've come across a dream of being a creator of many things, most of which are digital or done digitally. I've expanded my interest from web development to application, game, and even hardware develpment. In recent years, I've done a lot of research and practiced a lot of skills and still feel very inadequate in the realm of programming. A good friend of mine introduced me to a path in which my core programming abilities could exponentially grow in the period of 3 months that will even land me a job as a developer or even a contractor. So for now, this is my main focus.</p>
+            </section>
+
+            <section class="progress section ani">
+                <h2>My Learning</h2>
                 <div class="learnSource">
                     <h3>CodeCademy Progress:</h3>
                     <ul>
@@ -86,29 +91,34 @@
                             <progress min="0" max="100" value="10"></progress></li>
                         <li>Java <br/>
                             <progress min="0" max="100" value="5"></progress></li>
-                        
+
                         <li>C# <br/>
                             <progress min="0" max="100" value="100"></progress></li>
                     </ul>
                 </div>
-            </div>
-            <div class="contact section">
+            </section>
+
+            <section class="contact section ani">
+                <h2>Contact Me <b>(Coming Soon!)</b></h2>
                 <form>
-                    <p>Contact Me <b>(Coming Soon!)</b></p>
                     <input name="name" type="text" placeholder="Your Name"><br/><br/>
                     <input name="email" type="email" placeholder="your.email@service.com"><br/><br/>
                     <textarea name="message" placeholder="Write your message here."></textarea><br/>
                     <input type="submit" value="SEND" class="submit">
                 </form>
-            </div>
-            <div class="foot section">
+            </section>
+            
+            <footer class="foot section">
                 <div class="copyright">
-                    <p>No copyright. Just some stuff.</p>
+                    <p>&copy; 2017 Andrew. J. Borkowski</p>
                 </div>
                 <div class="updated">
                     <p>Date Created: 9/22/2017<br/>Last Updated: 11/12/2017</p>
                 </div>
-            </div>
-        </div>
+            </footer>
+            
+        </div> <!-- Closes grid container -->
+        
     </body>
+    
 </html>

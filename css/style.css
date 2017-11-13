@@ -17,7 +17,7 @@ h1 {
     margin-right: 300px;
 }
 
-h3 {
+h2 {
     margin: 2px 0px;
     padding-top: 0px;
     background-color: black;
@@ -28,6 +28,12 @@ h3 {
     /* Gives each section a rounded border */
     border: 5px solid black;
     border-radius: 5px;
+    transition: 0.5s;
+}
+
+.ani:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .container {
@@ -40,8 +46,6 @@ h3 {
                          "about progress"
                          "about contact"
                          "foot foot";
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-columns: 60% 1fr;
     grid-row-gap: 10px;
     grid-gap: 10px;
 }
@@ -52,7 +56,6 @@ h3 {
     width: 100%;
     margin:auto;
     font-family: "Copse", serif;
-    
 }
 
 .picturePos {
@@ -63,33 +66,35 @@ h3 {
 #myPicture {
     border: 3px solid black;
     border-radius: 100%;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 #myPicture:hover {
-    transform: scale(1.02) rotate(360deg);
+    transform: rotate(360deg);
+    transition: 1.5s;
 }
 
 .headList {
     margin-left: 180px;
     color: orange;
+    font-weight: 700;
 }
 
 .about {
-    background-color: aliceblue;
     grid-area: about;
-    font-size: 16px;
-    font-family: Gil Sans, monospace;
-    text-align: center;
+    height: 560px;
+    width: 500px;
+    margin: auto;
+    background-color: aliceblue;
     overflow: scroll;
-    padding: 1px 5%;
-    margin: 10px auto;
-    line-height: 1.9;
-    transition: 0.5s;
 }
 
-.about:hover {
-    transform: scale(1.2);
+.about p {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: Gil Sans, monospace;
+    text-align: left;
 }
 
 .about a{
@@ -100,16 +105,9 @@ h3 {
 }
 
 .progress {
-    background-color: orange;
     grid-area: progress;
-    grid-row: 2/3;
     overflow: scroll;
     background-color: aliceblue;
-    transition: 0.5s;
-}
-
-.progress:hover {
-    transform: scale(1.2);
 }
 
 .learnSource {
@@ -126,14 +124,9 @@ h3 {
 .contact {
     background-color: aliceblue;
     grid-area: contact;
-    grid-row: 3 / 4;
     text-align: center;
     line-height: 0.8;
-    transition: 0.5s;
-}
-
-.contact:hover {
-    transform: scale(1.2);
+    padding: 5px;
 }
 
 .contact p {
@@ -156,7 +149,7 @@ h3 {
     width: 240px;
 }
 
-.foot {
+footer {
     background-color: lightgrey;
     grid-area: foot;
     height: 70px;
@@ -164,6 +157,7 @@ h3 {
 
 .copyright {
     float: left;
+    margin: 8px;
 }
 
 .updated {
