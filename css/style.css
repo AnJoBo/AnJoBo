@@ -8,162 +8,21 @@ body {
     
 }
 
-h1 {
-    height: 30px;
-    color: aliceblue;
-    background-color:;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-right: 300px;
-}
-
-h2 {
-    margin: 2px 0px;
-    padding-top: 0px;
-    background-color: black;
-    color: aliceblue;
-}
-
-.section {
-    /* Gives each section a rounded border */
-    border: 5px solid black;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-
-.ani:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-
-.grid-container {
-    //background-color: green;
-    display: grid;
-    margin: auto;
-    width: 800px;
-    height: 850px;
-    grid-template-areas: "head head"
-                         "about progress"
-                         "about contact"
-                         "foot foot";
-    grid-row-gap: 10px;
-    grid-gap: 10px;
-}
-
-.head {
-    background-color: blueviolet;
-    grid-area: head;
-    width: 100%;
-    margin:auto;
-    font-family: "Copse", serif;
-}
-
-.picturePos {
-    float: left;
-    padding-left: 6px;
-}
-
-#myPicture {
-    border: 3px solid black;
-    border-radius: 100%;
-    transition: 1s;
-}
-
-#myPicture:hover {
-    transform: rotate(360deg);
-    transition: 1.5s;
-}
-
-.headList {
-    margin-left: 180px;
-    color: orange;
-    font-weight: 700;
-}
-
-.about {
-    grid-area: about;
-    height: 560px;
-    width: 500px;
-    margin: auto;
-    background-color: aliceblue;
-    overflow: scroll;
-}
-
-.about p {
-    padding: 0 20px;
-    font-size: 16px;
-    line-height: 1.2;
-    font-family: Gil Sans, monospace;
-    text-align: left;
-}
-
-.about a{
-    font-size: 14pt;
-    font-weight: 700;
-    color: gray;
-    text-decoration: none;
-}
-
-.progress {
-    grid-area: progress;
-    overflow: scroll;
-    background-color: aliceblue;
-}
-
-.learnSource {
-    height: auto;
-    width: 250px;
-    background-color: bisque;
-    padding-bottom: 1px;
-    padding-left: 20px;
-    font-family: monospace;
-    display: inline-block;
-    margin: 10px;
-}
-
-.contact {
-    background-color: aliceblue;
-    grid-area: contact;
+header {
     text-align: center;
-    line-height: 0.8;
-    padding: 5px;
+    background-color: white;
 }
 
-.contact p {
-    color: black;
-    font-size: 20px;
-    font-weight: 700px;
-    text-decoration: underline;
-    height: 10px;
-    line-height: 0.1px;
+.my-picture {
+    height: 200px;
+    border-radius: 100%;
+    border: 1px black solid;
 }
 
-.contact input {
-    width: 240px;
-    margin-bottom: 10px;
-}
-
-.contact textarea {
-    resize: none;
-    height: 80px;
-    width: 240px;
+section {
+    background-color: white;
 }
 
 footer {
-    background-color: lightgrey;
-    grid-area: foot;
-    height: 70px;
-}
-
-.copyright {
-    float: left;
-    margin: 8px;
-    font-weight: 500;
-    font-size: 12px
-}
-
-.updated {
-    float: right;
-    text-align: right;
-    padding-right: 10px;
+    background-color: white;
 }
