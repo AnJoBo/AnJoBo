@@ -1,8 +1,8 @@
-/* Need this?
+//Need this?
 * {
     box-sizing: border-box;
 }
-*/
+
 
 body {
     background: url(../images/background_img.jpg)no-repeat center center fixed;
@@ -14,16 +14,15 @@ header {
 }
 
 .my-picture {
-    height: 200px;
     border-radius: 100%;
     border: 1px black solid;
-    margin: 10px 50%;
+    margin: 5px 41.5%;
 }
 
 section {
-    background-color: white;
+    background-color: lightblue;
 }
 
 footer {
-    background-color: white;
+    background-color: lightcyan;
 }
