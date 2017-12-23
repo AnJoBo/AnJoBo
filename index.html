@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     
     <head>
+        
         <title>Andrew J. Borkowski</title>
         
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ---------- STUFF ---------- -->
+        
+        <meta charset="utf-8">
+        
+        <!-- Scales site to device width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- ---------- LINKS (CSS/BOOTSTRAP/jQUERY) ---------- -->
         
         <link href="css/style.css" type="text/css" rel="stylesheet">
         
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- ---------- FONTS ---------- -->
         <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
         
-        <!-- Adds Bootstrap to page via link. I want it included in my files,
-                because it seems to take a while to load in Live Preview, which
-                may translate to long loading times online (not tested).
-
-        <link rel="stylesheet" href="//maxcdn.bootstrap.com/bootstrap/3.3.1/css/bootstrap.min.css" /> -->
     </head>
     
-    <body class="container-fluid">
+    <body>
+    
+    <!-- [.container] class provides responsive 'fixed width container' -->
+    <!-- [.container-fluid] class provides 'full width container' -->
+        <!-- Experiment with these once Bootstrap is fully added -->
+    <div class="container-fluid">
         
-        <div class="container">
+        <!-- Rename this or delete. May be unnecessary -->
+        <div class="grid-container">
             
+        <div class="row">
             <header class="head section">
-                <div class="picturePos">
+                <div class="picturePos col-sm-3">
                     <img id="myPicture" src="./images/me01.jpg" height="180" alt="Andrew's dumb face" title="My dumb face. :)"/>
                 </div>
-                <div class="basicInfo">
+                <div class="col-sm-6">
                     <h1>Andrew J. Borkowski</h1>
                     <h2>Fullstack Web Developer in Training</h2>
                     <ul class="headList">
@@ -36,6 +56,7 @@
                     </ul>
                 </div>
             </header>
+        </div>
             
             <section class="about section ani">
                 <h2>About Me</h2>
@@ -43,7 +64,9 @@
                 From what I can gather (due to my lack of ever keeping records), I rebooted my interest in creating my own page years later and started doing some research in doing so. I came across many "free website" hosts that didn't require you to know any code to build your own page. At first I didn't mind having limited control and a URL that contained the hosts name within it, but soon wanted everything to be my own work - from scratch. Coming at the realization that getting my own URL would cost me money that I did not have, I turned to learning what was needed to make my own websites for free. I came across sites like <a href="http://www.codecademy.com" target="_blank">[Codecademy]</a>, <a href="http://www.khanacademy.org" target="_blank">[KhanAcademy]</a>, and many others that worked as an introduction or reference in writing your own HTML, CSS, JavaScript, and more computer languages. I clocked in many hours at these sites though struggled getting past the "tutorial phase" to making my own content, so I strayed away for a while.<br><br>
                 Now I've come across a dream of being a creator of many things, most of which are digital or done digitally. I've expanded my interest from web development to application, game, and even hardware develpment. In recent years, I've done a lot of research and practiced a lot of skills and still feel very inadequate in the realm of programming. A good friend of mine introduced me to a path in which my core programming abilities could exponentially grow in the period of 3 months that will even land me a job as a developer or even a contractor. So for now, this is my main focus.</p>
             </section>
-
+            
+            
+            <!-- Remove this from main page ...
             <section class="progress section ani">
                 <h2>My Learning</h2>
                 <div class="learnSource">
@@ -98,7 +121,7 @@
                             <progress min="0" max="100" value="100"></progress></li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
             <section class="contact section ani">
                 <h2>Contact Me <b>(Coming Soon!)</b></h2>
@@ -118,8 +141,8 @@
                     <p>Date Created: 9/22/2017<br/>Last Updated: 11/12/2017</p>
                 </div>
             </footer>
-            
-        </div> <!-- Closes grid container -->
+        </div>
+    </div> <!-- Closes containing Bootstrap container -->
         
     </body>
     

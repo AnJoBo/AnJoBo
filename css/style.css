@@ -36,7 +36,7 @@ h2 {
     transition: 0.5s;
 }
 
-.container {
+.grid-container {
     //background-color: green;
     display: grid;
     margin: auto;
