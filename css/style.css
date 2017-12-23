@@ -1,7 +1,7 @@
-//Need this?
+/*/Need this?
 * {
     box-sizing: border-box;
-}
+}*/
 
 
 body {
@@ -9,20 +9,34 @@ body {
     background-size: cover;
 }
 
-header {
-    background-color: white;
+.nav {
+    color: white;
+    font-size: 20px;
+    margin: 2.5%;
 }
 
-.my-picture {
-    border-radius: 100%;
-    border: 1px black solid;
-    margin: 5px 41.5%;
+.title {
+    color: white;
+    font-family: Copse;
 }
 
 section {
-    background-color: lightblue;
+    font-size: 1.3em;
+    font-family: "Vesper Libre";
+    background-color: aliceblue;
 }
 
 footer {
-    background-color: lightcyan;
+    background-color: lightgrey;
+    margin: 0.5%;
+}
+
+.copyright {
+    display: inline-block;
+    float: left;
+}
+
+.updated {
+    display: inline-block;
+    float: right;
 }
