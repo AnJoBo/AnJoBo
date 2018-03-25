@@ -8,11 +8,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100%;
-    margin-bottom: -40px;
+    height: 100%;
 }
 
-header {
+.header {
     text-align: center;
     color: white;
     text-shadow: 2px 2px black;
@@ -36,13 +35,13 @@ header {
     border: 2px solid black;
 }
 
-footer {
-    width: 100%;
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 30px;
     background-color: #303030;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     color: white;
     padding: 0 0 0 1%;
 }
