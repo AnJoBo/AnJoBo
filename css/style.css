@@ -25,6 +25,7 @@ header {
 .aboutMe {
     background-color: white;
     padding: 2%;
-    border-radius: 2%;
+    border-radius: 8px;
     text-align: center;
+    border: 2px solid black;
 }
