@@ -1,8 +1,23 @@
-.my-picture-container {
-    display: inline-block;
-    width: 20%;    
+body {
+    background: url(/images/background_img.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.my-picture {
+header {
+    text-align: center;
+    color: white;
+    text-shadow: black 2;
+}
+
+.myPictureContainer {
+    margin: 0 auto;
+}
+
+.myPicture {
+    width: 100%;
     border-radius: 50%;
+    border: black solid 2px;
 }
