@@ -26,20 +26,12 @@ body {
     margin-bottom: 80px;
 }
 
-.aboutMe {
+.aboutMe, .projects {
     background-color: #f0f8ff;
     padding: 2%;
     border-radius: 8px;
     text-align: center;
     border: 2px solid black;
-}
-
-.projects {
-    background-color: #f0f8ff;
-    padding: 2%;
-    border-radius: 8px;
-    border: 2px solid black;
-
 }
 
 .footer {
