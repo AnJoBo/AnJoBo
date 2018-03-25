@@ -21,3 +21,10 @@ header {
     border-radius: 50%;
     border: black solid 2px;
 }
+
+.aboutMe {
+    background-color: white;
+    padding: 2%;
+    border-radius: 2%;
+    text-align: center;
+}
