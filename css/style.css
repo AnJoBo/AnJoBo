@@ -43,6 +43,30 @@ body {
     width: 100%;
 }
 
+.vrButton {
+    background-color: rgb(230, 132, 5);
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding: 2px 4px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.vrButton:hover {
+    background-color: rgb(92, 80, 253);
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding: 2px 4px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
