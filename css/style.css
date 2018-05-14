@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: url(/images/background_img.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -6,69 +12,62 @@ body {
     background-size: cover;
 }
 
-.container {
-    margin-top: 60px;
-}
-
 .header {
+    width: 100%;
     text-align: center;
     color: white;
+    background-color: #303030;
     text-shadow: 2px 2px black;
+    border-bottom: 3px solid black;
+    padding: 10px;
 }
 
 .myPictureContainer {
-    margin: 0 auto;
+    display: inline-block;
+    margin: 5px;
 }
 
 .myPicture {
-    width: 100%;
+    height: 100px;
     border-radius: 50%;
     border: black solid 2px;
 }
 
-.main {
-    margin-bottom: 80px;
+.header-info {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
 }
 
-.aboutMe, .projects {
+.nav {
+    margin-top: 20px;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+li a:link, li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(99, 99, 209);
+}
+
+.nav li .current-page {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: 80%;
+    margin: 2% auto;
     background-color: #f0f8ff;
     padding: 2%;
     border-radius: 8px;
     text-align: center;
     border: 2px solid black;
-}
-
-.project {
-    display: inline-block;
-    width: 20%;
-}
-
-.projectImg {
-    width: 100%;
-}
-
-.vrButton {
-    background-color: rgb(230, 132, 5);
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    padding: 2px 4px;
-    border: 1px solid black;
-    border-radius: 8px;
-    text-decoration: none;
-    color: black;
-}
-
-.vrButton:hover {
-    background-color: rgb(92, 80, 253);
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    padding: 2px 4px;
-    border: 1px solid black;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
 }
 
 .footer {
@@ -79,4 +78,39 @@ body {
     background-color: #303030;
     color: white;
     padding: 0 0 0 1%;
+    border-top: 2px solid black;
+}
+
+.resume {
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.project-card {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px 10px;
+    vertical-align: top;
+    list-style-position: inside;
+    background-color: rgb(99, 99, 209);
+}
+
+.project-card li {
+    text-align: left;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #303030;
+    color: white;
+    padding: 0 0 0 1%;
+    border-top: 2px solid black;
+    height: 45%;
 }
