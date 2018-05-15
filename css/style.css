@@ -60,16 +60,6 @@ li a:hover {
     text-decoration: underline;
 }
 
-.main-content {
-    width: 80%;
-    margin: 2% auto;
-    background-color: #f0f8ff;
-    padding: 2%;
-    border-radius: 8px;
-    text-align: center;
-    border: 2px solid black;
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -112,5 +102,12 @@ li a:hover {
     color: white;
     padding: 0 0 0 1%;
     border-top: 2px solid black;
-    height: 45%;
+}
+
+.scene {
+    height: 700px;
+    width: 100%;
+    border: 2px solid black;
+    float: left;
+    z-index: -1;
 }
