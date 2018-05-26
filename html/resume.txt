@@ -1,0 +1,42 @@
+
+I aim to implement my creative and critical decision making abilities as well as my military experiences in working and communicating with a team to join the front-lines of software development. New ideas for the future inspire me and I have a strong ability to adapt, which make me a great candidate to bring on to any team or project.
+
+Technical Skills
+
+Unity | Java | SQL | Spring MVC | JSP | HTML | CSS | JavaScript | A-Frame | PHP | WordPress
+
+Technical Experience
+
+Digital Content Creation - several years of experience making simple 3D objects with Blender
+RPG Character Creator - program which handle tabletop RPG instances with Java in the console
+Vending Machine Sim - built a vending machine application using Java in the console
+Park Reservations - searches a database to place a camping reservation in National Parks
+using Java and PostgreSQL
+Personal Webpage - my “web playground” where I experiment with web application development using HTML, CSS, JavaScript, and A-Frame with a focus on immersive web experiences
+National Parks Geek - application which pulls detailed information on national parks and local weather from a SQL database to be displayed on a page using Spring MVC
+Workout Companion App - full demo project to be used as an exercise tracker that gyms or individual users can use; built using Java, Spring MVC, HTML, CSS and JavaScript.
+
+Education
+
+Tech Elevator - Cleveland, OH                           Jan 2018 - Apr 2018
+Fourteen week Java coding bootcamp where I learned full-stack web development using Java, HTML, CSS, JavaScript and other frameworks through lectures, exercises, and projects individually and paired with other students. Instruction included real-world problems and solutions used in the industry.
+
+Professional Experience
+
+Ohio Army National Guard                                 Apr 2016 -Present
+Intelligence Analyst
+Trained to analyze data collected from many sources to make critical decisions
+Reinforces my will and drive to never quit once something has started
+Learned the importance of constantly improving myself and those around me
+
+Ron Marhofer Auto Group                             Aug 2017 - Dec 2017
+Customer Service Technician
+Managed majority of lot organization
+Prepared vehicles for both display and delivery
+Communicated frequently with sales team and management
+
+AltSmoke, South Euclid OH                              Oct 2014 - Oct 2015
+Sales Associate
+Used simple technical and electrical knowledge with handheld vapor devices
+Educated guests on many topics regarding our products and smoking alternatives 
+Maintained a clean and relaxed atmosphere within the store
