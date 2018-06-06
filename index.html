@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,8 @@
     
         <!-- Source for A-Frame and components -->
         <script src="scripts/aframe/aframe-master.min.js"></script>
-          
-        <script src="scripts/aframe/aframe-htmltexture-component.min.js"></script>
+        
+        <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
 
         <!-- Pull source for jQuery -->
         <!-- <script src="scripts/jquery-3.3.1.min.js"></script> -->
@@ -23,7 +23,10 @@
             $(function(){
                 $("#header").load("common/header.html");
                 $("#footer").load("common/footer.html");
-                $("#XYZ").load("common/scene.html");
+                $("#scene").load("common/scene.html");
+                $("#bio").load("html/bio.html");
+                $("#projects").load("html/projects.html");
+                $("#resume").load("html/resume.html");
             });
         </script>
 
@@ -34,13 +37,18 @@
         <div id="header"></div>
 
         <!-- Main Content Area-->
-        <div id="XYZ">Test</div>
+        <div id="scene"></div>
+
+        <div id="bio"></div>
+        <div id="projects"></div>
+        <div id="resume"></div>
 
         <!-- Footer -->
         <div id="footer"></div>
 
         <!-- End of file scripts -->
         <script src="scripts/contentHandler.js"></script>
+
 
     </body>
 
