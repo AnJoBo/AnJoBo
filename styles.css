@@ -1,11 +1,11 @@
 @font-face {
     font-family: pixel;
-    src: url(VCR_OSD_MONO_1.001.ttf);
+    src: url(fonts/VCR_OSD_MONO_1.001.ttf);
 }
 
 @font-face {
     font-family: glueGun;
-    src: url(Glue\ Gun.otf);
+    src: url(fonts/Glue\ Gun.otf);
 }
 
 * {
@@ -80,6 +80,12 @@ header {
     padding: 20px 5px;
     margin: 5px;
     border-radius: 8px;    
+}
+
+.card hr {
+    padding-bottom: 5px;
+    background-color: rgb(54, 54, 54);
+    margin: 5px 0;
 }
 
 footer {
