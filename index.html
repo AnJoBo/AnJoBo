@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <title>Andrew J. Borkowski</title>
 </head>
 <body>
-    
-    <header>
+
+    <header id="banner">
         <div id="title">
             <h1>Andrew J. Borkowski</h1>
             <h2>Full-Stack Web developer <!--& VR Enthusiast--></h2>
         </div>
         <div id="photo">
-            <img src="me00.png">
+            <img id="myPhoto" src="me00.png" 
+                onmouseover="setTimeout(hover(this), 3000);" 
+                onmouseout="unhover(this);">
         </div>
-        <i class="fas fa-angle-double-down fa-5x"></i>
+        <a href="#aboutMe">
+            <i class="fas fa-angle-double-down fa-5x"></i>
+        </a>
+        
     </header>
     
     <div class="content">
@@ -63,8 +69,8 @@
             <h3>Things I've Done</h3><hr>
             <ul>
                 <li>14 Week Full-Stack Java Course</li>
-                <li></li>
-                <li></li>
+                <!--<li></li>
+                <li></li>-->
             </ul>
         </section>
 
