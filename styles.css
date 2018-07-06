@@ -85,6 +85,15 @@ h3 {
     list-style-type: none;
 }
 
+#contact {
+    padding-bottom: 452px;
+}
+
+form {
+    position: relative;
+    top: 100px;
+}
+
 .card {
     border: 2px solid lightgrey;
     background-color: #000;
@@ -122,11 +131,7 @@ footer {
     h2 {
         padding-top: 2px;
     }
-
-    #head-imgs{
-        width: 100%;
-    }
-
+    
     #photo {
         display: inline-block;
         vertical-align: top;
@@ -181,17 +186,18 @@ footer {
 @media (min-width: 1200px) {
 
     header {
-        text-align: left;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
     }
 
     #title {
         display: inline-block;
         vertical-align: bottom;
         text-align: right;
-        padding-left: 100px;
         padding-bottom: 50px;
-        margin-right: 100px;
-        width: 45%;
+        padding-left: 10
     }
 
     h1 {
@@ -204,7 +210,6 @@ footer {
 
     #head-imgs {
         display: inline-block;
-        width: 30%;
     }
 
     .fa-angle-double-down {}
@@ -215,7 +220,7 @@ footer {
     }
 
     .content {
-        margin-top: 100px;
+        margin-top: 450px;
     }
 
     #aboutMe {
