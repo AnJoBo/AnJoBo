@@ -81,7 +81,7 @@ h3 {
     text-shadow: -3px -1px  orangered;
 }
 
-#projects {
+#projects li {
     list-style-type: none;
 }
 
@@ -153,7 +153,6 @@ footer {
 
     #title {
         display: inline-block;
-        width: 60%;
     }
 
     #title h2 {
@@ -169,9 +168,8 @@ footer {
     }
 
     .fa-angle-double-down {
-        opacity: 0;
-        height: 1px;
-        width: 1px;
+        display: inline-block;
+        vertical-align: top;
     }
 
     .card {
@@ -182,18 +180,54 @@ footer {
 
 @media (min-width: 1200px) {
 
+    header {
+        text-align: left;
+    }
+
+    #title {
+        display: inline-block;
+        vertical-align: bottom;
+        text-align: right;
+        padding-left: 100px;
+        padding-bottom: 50px;
+        margin-right: 100px;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    #title h2 {
+        font-size: 0.5em;
+    }
+
+    #head-imgs {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .fa-angle-double-down {}
+
     .content {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content {
+        margin-top: 100px;
     }
 
     #aboutMe {
-        width: 45%;
-        display: inline-block;
+        vertical-align: top;
     }
 
-    #side {
-        width: 30%;
-        display: inline-block;
+    #skills, #projects {
+        margin-top: 360px;
+    }
+
+    #projects {
+        margin-bottom: 360px;
     }
 
 }

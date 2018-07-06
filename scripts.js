@@ -9,12 +9,12 @@
 
 // });
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  $("#myPhoto").hover(function() {
-    $(this).attr("src", "me00-1.png");
-  }, function() {
-    $(this).attr("src", "me00.png");
-  });
+//   $("#myPhoto").hover(function() {
+//     $(this).attr("src", "me00-1.png");
+//   }, function() {
+//     $(this).attr("src", "me00.png");
+//   });
 
-});
+// });
