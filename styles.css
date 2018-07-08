@@ -180,8 +180,9 @@ footer {
         width: 300px;
     }
 
-    #skills .icons > * {
-        width: 20%;
+    #skills .icons {
+        display: flex;
+        justify-content: space-evenly;
     }
 
 }
@@ -268,7 +269,7 @@ footer {
     }
 
     .p1, .p2 {
-        width: 620px;
+        width: 500px;
     }
 
     .p2 {
@@ -277,6 +278,11 @@ footer {
 
     #skills, #projects {
         margin-top: 360px;
+    }
+
+    #skills > {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     #projects {
