@@ -66,10 +66,19 @@ header a, header a:visited {
     margin: 20px 0 25px 0;
 }
 
+#bio {
+    text-align: justify;
+    padding: 5px 15px;
+}
+
 h3 {
     color: orangered;
     font-family: glueGun;
     letter-spacing: 3px;
+}
+
+.p1 {
+    padding-bottom: 20px;
 }
 
 #skills .icons > * {
@@ -158,6 +167,19 @@ footer {
         vertical-align: bottom;
     }
 
+    #bio {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .p1 {
+        padding-bottom: 0;
+    }
+
+    .p1, .p2 {
+        width: 300px;
+    }
+
     #skills .icons > * {
         width: 20%;
     }
@@ -194,6 +216,10 @@ footer {
     .fa-angle-double-down {
         display: inline-block;
         vertical-align: top;
+    }
+    
+    .p1, .p2 {
+        width: 400px;
     }
 
     .card {
@@ -237,11 +263,15 @@ footer {
     }
 
     .content {
-        width: 80%;
+        width: 90%;
         margin: 450px auto 0 auto;
     }
 
-    #aboutMe {
+    .p1, .p2 {
+        width: 620px;
+    }
+
+    .p2 {
         vertical-align: top;
     }
 
