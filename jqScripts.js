@@ -11,13 +11,20 @@ $(document).ready(function(){
 
     // ---- Scroll Animation ---
     if($(window).width() >= 1200 ){
-        $(window).scroll(function () {
+        $(window).scroll(function () {            
             $('[class^="card"]').each(function () {
-                if (($(this).offset().top - $(window).scrollTop()) < 150) {
+                var scrollPos = $(this).offset().top - $(window).scrollTop();
+                if (scrollPos <= 150 && scrollPos >= 100) {
+                    $(this).stop().fadeTo(500, 0.5);
+                    console.log("Partial fade @ " + scrollPos);
+                } else if (scrollPos > 1 && scrollPos < 150) {
                     $(this).stop().fadeTo(500, 0);
+                    console.log("Total fade @ " + scrollPos);
                 } else {
                     $(this).stop().fadeTo(500, 1);
+                    console.log("Total return @ " + scrollPos);
                 }
+
             });
         });
     }
