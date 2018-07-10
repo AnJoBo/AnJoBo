@@ -79,7 +79,7 @@ header a, header a:visited {
     color: orangered;
     font-family: glueGun;
     letter-spacing: 3px;
-
+    font-size: 1.5em;
 }
 
 #bio {
