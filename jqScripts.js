@@ -17,7 +17,8 @@ $(document).ready(function(){
                 if (scrollPos <= 150 && scrollPos >= 100) {
                     $(this).stop().fadeTo(500, 0.5);
                     console.log("Partial fade @ " + scrollPos);
-                } else if (scrollPos > 1 && scrollPos < 150) {
+                } else if ((scrollPos > 1 && scrollPos < 150) || 
+                            (scrollPos > 950)) {
                     $(this).stop().fadeTo(500, 0);
                     console.log("Total fade @ " + scrollPos);
                 } else {
