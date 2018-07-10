@@ -15,24 +15,39 @@
 }
 
 body {
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(27, 27, 27);
     color: #ababae;
     font-family: pixel;
+    text-align: center;
 }
 
 header {
-    text-align: center;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(44, 44, 44);
     color: orangered;
     font-family: glueGun;
     font-size: 2em;
     border-bottom: 15px solid orangered;
     box-shadow: 0px 2.5px #000;
-    height: 625px;
+}
+
+.card {
+    border: 2px solid lightgrey;
+    background-color: #000;
+    color:rgb(201, 201, 201);
+    padding: 20px 5px;
+    margin: 12px 6px;
+    border-radius: 8px;
+    box-shadow: 5px 5px orangered;
+}
+
+.card hr {
+    padding-bottom: 5px;
+    background-color: rgb(201, 201, 201);
+    margin: 5px;
 }
 
 #title {
-    text-shadow: 2px 2px #000;
+    text-shadow: 3px 2px #000;
     letter-spacing: 2px;
     padding-top: 40px;
 }
@@ -42,51 +57,52 @@ h2 {
 }
 
 #photo {
-    margin: 15px;
+    margin: 15px auto;
 }
 
-header a, header a:visited {
-    color: orangered;
-}
-
-#photo img {
+#myPhoto {
     border-radius: 50%;
     border: 5px solid orangered;
     padding: 5px;
     box-shadow: 40px 4px #000;
 }
 
-.fa-angle-double-down {
+header a, header a:visited {
+    color: orangered;
+}
+
+#arrows {
     text-shadow: 4px 4px #000, 4px -2px #000;
 }
 
-.content {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 20px 0 25px 0;
+.content h3 {
+    color: orangered;
+    font-family: glueGun;
+    letter-spacing: 3px;
+
 }
 
 #bio {
     text-align: justify;
     padding: 5px 15px;
-}
-
-h3 {
-    color: orangered;
-    font-family: glueGun;
-    letter-spacing: 3px;
+    font-size: 1.2em;
 }
 
 .p1 {
     padding-bottom: 20px;
 }
 
-#skills .icons > * {
-    display: inline-block;
-    width: 45%;
+.icons {
+    font-size: 1em;
 }
 
-.ico-card i {
+.ico-card {
+    width: 40%;
+    display: inline-block;
+}
+
+.icons i {
+    font-size: 4em;
     text-shadow: -3px -1px  orangered;
 }
 
@@ -98,10 +114,11 @@ form {
     margin: 0 auto;
 }
 
-form input, textarea {
+input, textarea {
     padding: 2px 4px;
     margin: 4px;
     width: 70%;
+    background-color: rgb(201, 201, 201);
 }
 
 textarea {
@@ -115,22 +132,6 @@ textarea {
     background-color: orangered;
     font-family: pixel;
     font-size: 1.5em;
-}
-
-.card {
-    border: 2px solid lightgrey;
-    background-color: #000;
-    color:rgb(201, 201, 201);
-    padding: 20px 5px;
-    margin: 5px;
-    border-radius: 8px;
-    box-shadow: 5px 5px orangered;
-}
-
-.card hr {
-    padding-bottom: 5px;
-    background-color: rgb(54, 54, 54);
-    margin: 5px 0;
 }
 
 footer {
@@ -147,24 +148,13 @@ footer {
 
 @media (min-width: 768px) {
 
-    h1 {
-        letter-spacing: 8px;
-        padding-top: 40px;
+    #head-imgs {
+        display: flex;
+        justify-content: space-evenly;
     }
 
-    h2 {
-        padding-top: 2px;
-    }
-    
-    #photo {
-        display: inline-block;
-        vertical-align: top;
-        margin: 50px;
-    }
-
-    .fa-angle-double-down {
-        display: inline-block;
-        vertical-align: bottom;
+    #myPhoto, #arrows {
+        margin: 0 auto;
     }
 
     #bio {
@@ -172,15 +162,17 @@ footer {
         justify-content: space-evenly;
     }
 
-    .p1 {
-        padding-bottom: 0;
+    #pDivide {
+        border: 2px solid rgb(201, 201, 201);
+        height: auto;
+        width: 5px;
     }
 
     .p1, .p2 {
         width: 300px;
     }
 
-    #skills .icons {
+    .icons {
         display: flex;
         justify-content: space-evenly;
     }
@@ -188,11 +180,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-
-    header {
-        font-size: 4em;
-        height: auto;
-    }
 
     #title {
         display: inline-block;
@@ -206,25 +193,27 @@ footer {
         font-size: 1em;
     }
 
+    #head-imgs {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
     #photo {
         display: inline-block;
-        width: 15%;
-        text-align: left;
-        margin-left: 1px;
-        padding-left: 1px;
     }
 
-    .fa-angle-double-down {
+    #head-imgs i {
         display: inline-block;
-        vertical-align: top;
     }
     
-    .p1, .p2 {
-        width: 400px;
+    .card {
+        margin: 15px auto;
+        width: 90%;
     }
 
-    .card {
-        margin: 15px auto 5px auto;
+    .p1, .p2 {
+        width: 380px;
+        padding: 20px 0;
     }
 
 }
@@ -236,57 +225,24 @@ footer {
         position: fixed;
         top: 0;
         margin: 0 auto;
+        z-index: 1;
     }
 
-    #title {
-        display: inline-block;
-        vertical-align: bottom;
-        text-align: right;
-        padding-bottom: 50px;
-        padding-left: 10
-    }
-
-    h1 {
-        font-size: 1em;
-    }
-
-    #title h2 {
-        font-size: 0.5em;
-    }
-
-    #head-imgs {
-        display: inline-block;
-    }
-
-    #head-imgs i {
-        font-size: 2.5em;
-        padding-left: 20px;
-    }
-
-    .content {
-        width: 90%;
-        margin: 450px auto 0 auto;
+    .card {
+        margin-top: 350px;
     }
 
     .p1, .p2 {
         width: 500px;
     }
 
-    .p2 {
-        vertical-align: top;
-    }
-
-    #skills, #projects {
-        margin-top: 360px;
-    }
-
-    #skills > {
+    #skills > h1 {
         display: flex;
         justify-content: space-evenly;
     }
 
-    #projects {
-        margin-bottom: 360px;
+    #skills i {
+        font-size: 6em;
     }
 
     #contact {

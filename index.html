@@ -24,7 +24,7 @@
             <div id="photo">
                 <img id="myPhoto" src="img/Drew.png">
             </div>
-            <i class="fas fa-angle-double-down fa-5x"></i>
+            <i id="arrows" class="fas fa-angle-double-down fa-5x"></i>
         </div>
         
     </header>
@@ -35,6 +35,7 @@
             <h3>Who I Am</h3><hr>
             <div id="bio">
                 <div class="p1">As someone who thrives for continuous growth, learning new technologies and implementing creative solutions further fuels my passion for Computer Software. Joining the IT community has greatly enriched my life, as it draws forth my strengths and challenges me to become the best developer that I can be.</div>
+                <div id="pDivide"></div>
                 <div class="p2">My aim is to be part of a company that I can be proud of, offering my familiarity with Full-Stack development and military experience in team communication so that we can join the "front-lines" of what is shaping the world around us.</div>
             </div>
         </section>
@@ -70,24 +71,16 @@
                 <h3>Things I've Done</h3><hr>
                 <ul>
                     <li>14 Week Full-Stack Java Course</li>
-                    <!--<li></li>
-                    <li></li>-->
                 </ul>
             </section>
         </aside>
 
         <div id="contact" class="card">
             <h3>Contact Me</h3><hr>
+            <p>Fill out the form below to send me a message.</p></br>
+            <p>You will be sent to FormSpree to send it.</p>
             <div class="contact-form">
                 <i class="far fa-envelope fa-5x"></i>
-                <!--<form>
-                    <p>Interested in learning more? <br>
-                        Fill out the form below to send me an e-mail!</p>
-                    <input type="text" placeholder="Your Name"><br>
-                    <input type="email" placeholder="Your Email"><br>
-                    <textarea placeholder="Message"></textarea><br>
-                    <button type="submit" class="button">Send it!</button>
-                </form>-->
                 <form role="form" id="contactForm" action="https://formspree.io/ajborkowski1031@gmail.com" method="POST">
                     <div class="form-group control-group">
                         <div class="controls">
@@ -116,7 +109,7 @@
                     </div>
                     
                     <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Send">
+                            <input type="submit" class="button" value="Send">
                     </div>
                 </form>
             </div>
@@ -129,6 +122,7 @@
         &copy;Andrew J. Borkowski 2018
     </footer>
     
+    <script src="jqScripts.js"></script>
     <script src="jqValidation.js"></script>
 
 </body>
