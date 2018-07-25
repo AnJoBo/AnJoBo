@@ -94,13 +94,20 @@ header a, header a:visited {
     display: inline-block;
 }
 
-.icons img {
-    font-size: 4em;
-    text-shadow: -3px -1px  orangered;
+#projects ul {
+    width: 90%;
+    margin: 0 auto;
 }
 
 #projects li {
     list-style-type: none;
+    padding-top: 15px;
+    text-align: left;
+}
+
+#projects span {
+    font-size: 1.5em;
+    color: #fff;
 }
 
 form {
@@ -222,7 +229,7 @@ footer {
     }
 
     .card {
-        margin-top: 320px;
+        margin-top: 420px;
     }
 
     .p1, .p2 {
@@ -236,6 +243,16 @@ footer {
 
     #skills img {
         font-size: 6em;
+    }
+
+    #skills p {
+        padding-top: 20px;
+        font-size: 2em;
+    }
+
+    #projects span , #projects li {
+        display: block;
+        text-align: center;
     }
 
     #contact {
