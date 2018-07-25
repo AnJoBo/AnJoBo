@@ -9,18 +9,17 @@
 			preventSubmit: true, // stop the form submit event from firing if validation fails
 			submitError: false, // function called if there is an error when trying to submit
 			submitSuccess: false, // function called just before a successful submit event is sent to the server
-            semanticallyStrict: false, // set to true to tidy up generated HTML output
+      semanticallyStrict: false, // set to true to tidy up generated HTML output
 			autoAdd: {
 				helpBlocks: true
 			},
-            filter: function () {
-                // return $(this).is(":visible"); // only validate elements you can see
-                return true; // validate everything
-            }
+      filter: function () {
+        // return $(this).is(":visible"); // only validate elements you can see
+        return true; // validate everything
+      }
 		},
     methods: {
       init : function( options ) {
-
         var settings = $.extend(true, {}, defaults);
 
         settings.options = $.extend(true, settings.options, options);
@@ -37,6 +36,7 @@
           var $form = $(this);
           var warningsFound = 0;
           var $inputs = $form.find("input,textarea,select").not("[type=submit],[type=image]").filter(settings.options.filter);
+          
           $inputs.trigger("submit.validation").trigger("validationLostFocus.validation");
 
           $inputs.each(function (i, el) {
@@ -58,7 +58,7 @@
             }
             $form.addClass("error");
             if ($.isFunction(settings.options.submitError)) {
-              settings.options.submitError($form, e, $inputs.jqBootstrapValidation("collectErrors", true));
+              settings.options.submitError($form, e, $inputs.jqValidation("collectErrors", true));
             }
           } else {
             $form.removeClass("error");
@@ -87,8 +87,6 @@
           // =============================================================
           //                                     SNIFF HTML FOR VALIDATORS
           // =============================================================
-
-          // *snort sniff snuffle*
 
           if (settings.options.sniffHtml) {
             var message = "";
@@ -882,21 +880,21 @@
     return context[func].apply(this, args);
   }
 
-	$.fn.jqBootstrapValidation = function( method ) {
+	$.fn.jqValidation = function( method ) {
 
 		if ( defaults.methods[method] ) {
 			return defaults.methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
 		} else if ( typeof method === 'object' || ! method ) {
 			return defaults.methods.init.apply( this, arguments );
 		} else {
-		$.error( 'Method ' +  method + ' does not exist on jQuery.jqBootstrapValidation' );
+		$.error( 'Method ' +  method + ' does not exist on jQuery.jqValidation' );
 			return null;
 		}
 
 	};
 
-  $.jqBootstrapValidation = function (options) {
-    $(":input").not("[type=image],[type=submit]").jqBootstrapValidation.apply(this,arguments);
+  $.jqValidation = function (options) {
+    $(":input").not("[type=image],[type=submit]").jqValidation.apply(this,arguments);
   };
 
 })( jQuery );

@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andrew J. Borkowski</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     
-    <script src="jquery-3.3.1.min.js"></script>
-
-    <title>Andrew J. Borkowski</title>
 </head>
 <body>
 
     <header>
+
         <div id="title">
             <h1>Andrew J. Borkowski</h1>
-            <h2>Full-Stack Web developer <!--& VR Enthusiast--></h2>
-        </div>
-        <div id="head-imgs">
-            <div id="photo">
-                <img id="myPhoto" src="img/Drew.png">
-            </div>
-            <i id="arrows" class="fas fa-angle-double-down fa-5x"></i>
+            <h2>Software Developer <!--& VR Enthusiast--></h2>
         </div>
         
+        <div id="head-imgs">
+            <div id="photo">
+                <img id="myPhoto" src="img/Drew.png" height="180">
+            </div>
+            <img class="test" src="img/svg/angle-double-down.svg" />
+            </svg>
+        </div>
+
     </header>
     
     <div class="content">
@@ -46,23 +45,23 @@
                 <div class="icons">
                     <div class="ico-card">
                         <h4>HTML</h4>
-                        <i class="fab fa-html5 fa-5x"></i>
+                        <img src="img/svg/html5.svg">
                     </div>
                     <div class="ico-card">
                         <h4>CSS</h4>
-                        <i class="fab fa-css3-alt fa-5x"></i>
+                        <img src="img/svg/css3-alt.svg">
                     </div>
                     <div class="ico-card">
                         <h4>JavaScript</h4>
-                        <i class="fab fa-js fa-5x"></i>
+                        <img src="img/svg/js.svg">
                     </div>
                     <div class="ico-card">
                         <h4>Java</h4>
-                        <i class="fab fa-java fa-5x"></i>
+                        <img src="img/svg/java.svg">
                     </div>
                     <div class="ico-card">
                         <h4>PHP</h4>
-                        <i class="fab fa-php fa-5x"></i>
+                        <img src="img/svg/php.svg">
                     </div>
                 </div>
             </section>
@@ -77,10 +76,10 @@
 
         <div id="contact" class="card">
             <h3>Contact Me</h3><hr>
-            <p>Fill out the form below to send me a message.</p></br>
-            <p>You will be sent to FormSpree to send it.</p>
+            <img src="img/svg/envelope.svg" />
+            <p>Fill out the form below to send me a message.</br>
+            You will be sent to FormSpree to send it.</p>
             <div class="contact-form">
-                <i class="far fa-envelope fa-5x"></i>
                 <form role="form" id="contactForm" action="https://formspree.io/ajborkowski1031@gmail.com" method="POST">
                     <div class="form-group control-group">
                         <div class="controls">
@@ -122,7 +121,8 @@
         &copy;Andrew J. Borkowski 2018
     </footer>
     
-    <script src="jqScripts.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="scripts.js"></script>
     <script src="jqValidation.js"></script>
 
 </body>
