@@ -14,6 +14,16 @@
     padding: 0;
 }
 
+::-moz-selection {
+    color: black;
+    background: rgba(255, 69, 0, 0.99);
+}
+
+::selection {
+    color: black;
+    background: rgba(255, 69, 0, 0.99);
+}
+
 body {
     background: rgb(27, 27, 27) url(img/board.jpg) fixed no-repeat;
     color: #ababae;
@@ -172,7 +182,7 @@ footer {
         width: 300px;
     }
 
-    .icons {
+    .front-end, .back-end {
         display: flex;
         justify-content: space-evenly;
     }
@@ -259,14 +269,19 @@ footer {
         z-index: -1;
         height: 640px;
         text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #contact img {
+        padding-top: 25px;
     }
 
     .contact-form form {
-        padding-top: 30px;
         width: 40%;
     }
 
-    .contact-form p {
+    .contact-form p,
+    .contact-form form {
         padding-top: 10px;
     }
 
