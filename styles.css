@@ -266,4 +266,8 @@ footer {
         width: 40%;
     }
 
+    .contact-form p {
+        padding-top: 10px;
+    }
+
 }
