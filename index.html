@@ -18,12 +18,73 @@
     <meta name="msapplication-TileColor" content="#ff4500">
     <meta name="theme-color" content="#ff4500">
 
-
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     
 </head>
 <body>
 
-    <header>
+    <div id="header">
+
+        <div id="head-canvas">
+            <a-scene embedded>
+                <a-assets>
+                    <a-asset-item id="code" src="models/dev-logo.gltf"></a-asset-item>
+                </a-assets>
+
+                <a-entity camera look-controls>
+                        <a-entity gltf-model="#code"
+                            scale="0.02 0.05 0.05"
+                            position="0.6 -1.25 -2"
+                            material="shader: flat; color: white" 
+                            light="type: point; color: white"></a-entity>
+                </a-entity>
+
+                <a-plane id="floor"
+                    color="#c9c9c9" 
+                    height="20" 
+                    width="20"
+                    position="0 -5 0"
+                    rotation="-90 0 0"></a-plane>
+
+                <a-plane id="north"
+                    color="black" 
+                    height="18" 
+                    width="38"
+                    position="0 0 -20"
+                    rotation="0 0 0"></a-plane>
+
+                <a-plane id="east"
+                    color="black" 
+                    height="18" 
+                    width="38"
+                    position="20 0 0"
+                    rotation="0 -90 0"></a-plane>
+
+                <a-plane id="south"
+                    color="black" 
+                    height="18" 
+                    width="38"
+                    position="0 0 20"
+                    rotation="0 180 0"></a-plane>
+
+                <a-plane id="west"
+                    color="black" 
+                    height="18" 
+                    width="38"
+                    position="-20 0 0"
+                    rotation="0 90 -180"></a-plane>
+
+                <a-plane id="ceiling"
+                    color="black" 
+                    height="20" 
+                    width="20"
+                    position="0 6 0"
+                    rotation="90 0 0"></a-plane>
+
+                <a-sky color="orangered"></a-sky>
+                
+            </a-scene>
+        </div>
 
         <div id="title">
             <h1>Andrew J. Borkowski</h1>
@@ -34,24 +95,26 @@
             <div id="photo">
                 <img id="myPhoto" src="img/Drew.png" height="180">
             </div>
-            <img src="img/svg/angle-double-down.svg" />
+            <a href="#aboutMe">
+                <img src="img/svg/angle-double-down.svg" class="active"/>
+            </a>
             </svg>
         </div>
 
-    </header>
+    </div>
     
     <div class="content">
 
-        <section id="aboutMe" class="card">
+        <div id="aboutMe" class="card">
             <h3>Who I Am</h3><hr>
             <div id="bio">
                 <div class="p1">As someone who thrives for continuous growth, learning new technologies and implementing creative solutions further fuels my passion for Computer Software. Joining the IT community has greatly enriched my life, as it draws forth my strengths and challenges me to become the best developer that I can be.</div>
                 <div id="pDivide"></div>
                 <div class="p2">My aim is to be part of a company that I can be proud of, offering my familiarity with Full-Stack development and military experience in team communication so that we can join the "front-lines" of what is shaping the world around us.</div>
             </div>
-        </section>
+        </div>
 
-        <section id="skills" class="card">
+        <div id="skills" class="card">
             <h3>What I Know</h3><hr>
             <h4>Front-End</h4><hr>
                 <div class="front-end">
@@ -85,9 +148,9 @@
                 </div>
                 <hr>
                 <p>With these powers combined, I am a capable Full-Stack hero!</p>
-        </section>
+        </div>
 
-        <section id="projects" class="card">
+        <div id="projects" class="card">
             <h3>Things I've Done</h3><hr>
             <p>14 Week Full-Stack Java Course with the following projects:</p>
             <ul>
@@ -96,7 +159,7 @@
                 <li><span>National Park Geek</span> - Dynamic website built using Spring MVC</li>
                 <li><span>Workout Companion</span> - Web application built on Spring MVC that allows users to sign up and log fitness data</li>
             </ul>
-        </section>
+        </div>
 
         <div id="contact" class="card">
             <h3>Contact Me</h3><hr>
@@ -146,9 +209,11 @@
         &copy;Andrew J. Borkowski 2018
     </footer>
     
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="scripts.js"></script>
-    <script src="jqValidation.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/jqValidation.js"></script>
+
+    <!-- <script src="scripts/aframe-master.min.js"></script> -->
 
 </body>
 </html>
