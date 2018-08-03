@@ -27,7 +27,10 @@
 }
 
 body {
-    background: rgb(27, 27, 27) url(img/board.jpg) fixed no-repeat;
+    background: rgb(27, 27, 27) url(img/board.jpg) 
+                no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
     color: #ababae;
     font-family: pixel;
     text-align: center;
