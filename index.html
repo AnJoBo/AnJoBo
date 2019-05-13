@@ -15,39 +15,33 @@
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ff4500">
     <meta name="msapplication-TileColor" content="#ff4500">
     <meta name="theme-color" content="#ff4500">
-
-    <!-- Non-min for debugging -->
-    <script src ="scripts/aframe-master.js"></script>
-    <!-- <script src="scripts/aframe-master.min.js"></script> -->
     
 </head>
 <body>
 
     <div id="header">
-
-        <div id="head-canvas"></div>
-
-        <div id="title">
-            <h1>Andrew J. Borkowski</h1>
-            <h2>Software Developer <!--& VR Enthusiast--></h2>
-        </div>
-        
         <div id="head-imgs">
             <div id="photo">
                 <img id="myPhoto" src="img/Drew.png" height="180">
             </div>
-            <a href="#aboutMe">
-                <img src="img/svg/angle-double-down.svg" class="active"/>
-            </a>
-            </svg>
         </div>
-
+        <div id="title">
+            <h1>Andrew J. Borkowski</h1>
+            <h2>Software Developer <!--& VR Enthusiast--></h2>
+        </div>
+        <div id="nav">
+            <ul class="nav-list">
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
     
-    <div class="content">
+    <div class="viewport">
 
         <div id="aboutMe" class="card">
-            <h3>Who I Am</h3><hr>
+            <h3>A Little About Me</h3><hr>
             <div id="bio">
                 <div class="p1">As someone who thrives for continuous growth, learning new technologies and implementing creative solutions further fuels my passion for Computer Software. Joining the IT community has greatly enriched my life, as it draws forth my strengths and challenges me to become the best developer that I can be.</div>
                 <div id="pDivide"></div>
@@ -55,7 +49,7 @@
             </div>
         </div>
 
-        <div id="skills" class="card">
+        <!-- <div id="skills" class="card">
             <h3>Skill Points</h3><hr>
                 <div class="skill-tree">
                     <div class="ico-card">
@@ -73,7 +67,7 @@
                 </div>
                 <hr>
                 <p>With these powers combined, I am a capable Full-Stack hero!</p>
-        </div>
+        </div> -->
 
         <div id="projects" class="card">
             <h3>Things I've Done</h3><hr>
@@ -88,7 +82,7 @@
 
         <div id="contact" class="card">
             <h3>Contact Me</h3><hr>
-            <img src="img/svg/envelope.svg" />
+<!--            <img src="img/svg/envelope.svg" />-->
             <p>Want to know more or hire me?<br>
                 Fill out the form below to send me a message.</p>
             <div class="contact-form">
@@ -136,7 +130,7 @@
     
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/scripts.js"></script>
-    <script src="scripts/jqValidation.js"></script>
+<!--    <script src="scripts/jqValidation.js"></script>-->
 
     <!-- <script src="scripts/aframe-master.min.js"></script> -->
 

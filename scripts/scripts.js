@@ -17,5 +17,17 @@ $(document).ready(function(){
         $(this).css("background-color", "rgb(201, 201, 201)");
     });
 
+    // ---- Nav Stuff ----
+    $( "ul.nav-list li" ).hover(
+        function() {
+            $(this).css("color", "red");
+        },
+        function() {
+            $(this).css("color", "green");
+        }
+    );
+
+
+
 });
 
