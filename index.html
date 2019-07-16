@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,11 +21,7 @@
 <body>
 
     <div id="header">
-        <div id="head-imgs">
-            <div id="photo">
-                <img id="myPhoto" src="img/Drew.png" height="180">
-            </div>
-        </div>
+        <img id="myPhoto" src="img/Drew.png" height="180">
         <div id="title">
             <h1>Andrew J. Borkowski</h1>
             <h2>Software Developer <!--& VR Enthusiast--></h2>
@@ -38,53 +35,59 @@
         </div>
     </div>
     
-    <div class="viewport">
-
+    <div id="container">
+        
         <div id="aboutMe" class="card">
-            <h3>A Little About Me</h3><hr>
+            <h3>Technical Background</h3><hr>
             <div id="bio">
-                <div class="p1">As someone who thrives for continuous growth, learning new technologies and implementing creative solutions further fuels my passion for Computer Software. Joining the IT community has greatly enriched my life, as it draws forth my strengths and challenges me to become the best developer that I can be.</div>
+                <div class="p1">
+                    As someone who thrives for continuous growth, learning new technologies and implementing creative solutions further fuels my passion for Computer Software. Joining the IT community has greatly enriched my life, as it draws forth my strengths and challenges me to become the best developer that I can be.
+                </div>
                 <div id="pDivide"></div>
-                <div class="p2">My aim is to be part of a company that I can be proud of, offering my familiarity with Full-Stack development and military experience in team communication so that we can join the "front-lines" of what is shaping the world around us.</div>
+                <div class="p2">
+                    My aim is to be part of a company that I can be proud of, offering my familiarity with Full-Stack development and military experience in team communication so that we can join the "front-lines" of what is shaping the world around us.
+                </div>
             </div>
         </div>
 
-        <!-- <div id="skills" class="card">
-            <h3>Skill Points</h3><hr>
-                <div class="skill-tree">
-                    <div class="ico-card">
-                        <h4>Front End</h4><br>
-                        <img src="img/svg/skill_point_fe-c.svg">
-                    </div>
-                    <div class="ico-card">
-                        <h4>Back End</h4><br>
-                        <img src="img/svg/skill_point_be-c.svg">
-                    </div>
-                    <div class="ico-card">
-                        <h4>Creative Software</h4><br>
-                        <img src="img/svg/skill_point_art-c.svg">
-                    </div>
-                </div>
-                <hr>
-                <p>With these powers combined, I am a capable Full-Stack hero!</p>
-        </div> -->
+        <div id="skills" class="card">
+            <h3>Languages and Software</h3><hr>
+            <h4>Front End</h4><br>
+            <ul>
+                <li>Html/Css/Javascript</li>
+                <li>JQuery</li>
+                <li>A-Frame</li>
+            </ul>
+            <h4>Back End</h4><br>
+            <ul>
+                <li>Java</li>
+                <li>C#</li>
+            </ul>
+            <h4>Software</h4><br>
+            <ul>
+                <li>Elcipse</li>
+                <li>WebStorm</li>
+                <li>IntelliJ</li>
+                <li>DataGrip</li>
+            </ul>
+        </div> 
 
         <div id="projects" class="card">
-            <h3>Things I've Done</h3><hr>
-            <p>14 Week Full-Stack Java Course with the following projects:</p>
+            <h3>Accomplishments</h3><hr>
             <ul>
-                <li><span>VendoMatic500</span> - Java console application</li>
-                <li><span>National Park Reservation</span> - Java console application connected to a SQL database</li>
-                <li><span>National Park Geek</span> - Dynamic website built using Spring MVC</li>
-                <li><span>Workout Companion</span> - Web application built on Spring MVC that allows users to sign up and log fitness data</li>
+                <li>14 Week Full-Stack Java Course</li>
+    <!--            <li>Demo CRUD app</li>-->
+    <!--            <li>Ultrack</li>-->
+            </ul>
+            <ul>
+
             </ul>
         </div>
 
         <div id="contact" class="card">
             <h3>Contact Me</h3><hr>
-<!--            <img src="img/svg/envelope.svg" />-->
-            <p>Want to know more or hire me?<br>
-                Fill out the form below to send me a message.</p>
+            <p>Want to know more?<br>
+                Send me a message.</p>
             <div class="contact-form">
                 <form role="form" id="contactForm" action="https://formspree.io/ajborkowski1031@gmail.com" method="POST">
                     <div class="form-group control-group">
@@ -99,7 +102,7 @@
                             <input type="text" class="form-control" placeholder="Last Name" name="name" id="lastname" data-validation-required-message="Please enter your last name." aria-invalid="false">
                         </div>
                     </div>
-                    
+
                     <div class="form-group control-group">
                         <div class="controls">
                             <p class="help-block"></p>
@@ -112,27 +115,26 @@
                             <textarea class="form-control" placeholder="Message" type="text" name="message" id="message" data-validation-required-message="Please enter some message." aria-invalid="false"></textarea>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                             <input type="submit" class="button" value="Send">
                     </div>
                     <p>Note: You will be sent to FormSpree to validate being human. :)</p>
                 </form>
             </div>
-            
         </div>
         
-    </div> <!-- End main content -->
-
+    </div>
+    
+        
     <footer>
         &copy;Andrew J. Borkowski 2018
     </footer>
     
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/scripts.js"></script>
-<!--    <script src="scripts/jqValidation.js"></script>-->
+    <script src="scripts/jqValidation.js"></script>
 
-    <!-- <script src="scripts/aframe-master.min.js"></script> -->
 
 </body>
 </html>
