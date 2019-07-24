@@ -107,7 +107,7 @@ h4 {
 }
 
 .card {
-    height: 100vh;
+    height: 90vh;
     border: 2px solid lightgrey;
     background-color: #000;
     color:rgb(201, 201, 201);
