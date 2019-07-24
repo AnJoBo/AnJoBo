@@ -67,14 +67,20 @@ body {
 }
 
 #nav {
-    display: inline-block;
-    text-align: left;
-    padding-top: 30px;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    background-color: darkgrey;
+    font-size: 0.8em;
 }
 
-.nav-list {
+.nav-list * {
     list-style-type: none;
     font-family: pixel;
+    display: inline;
 }
 
 a {
