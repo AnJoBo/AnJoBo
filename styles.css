@@ -72,9 +72,9 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 1;
     background-color: darkgrey;
-    font-size: 0.8em;
+    font-size: 1.5em;
+    padding: 5px 0;
 }
 
 .nav-list * {
