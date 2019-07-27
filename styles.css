@@ -1,6 +1,6 @@
 @font-face {
     font-family: pixel;
-    src: url(fonts/VCR_OSD_MONO_1.001.ttf);
+    src: url(fonts/pixel.ttf);
 }
 
 .jumbotron {
@@ -15,7 +15,7 @@
 }
 
 .title {
-    background-color: rgba(68, 68, 68, 0.671);
+    background-color: rgba(68, 68, 68, 0.829);
     padding: 5%;
 }
 
