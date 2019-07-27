@@ -20,25 +20,7 @@
   <body>
     
     <!-- Navbar -->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Andrew Borkowski</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggle">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        
 
     <!-- Jumbotron -->
         <div class="jumbotron" style="height: 100vh;">
@@ -83,7 +65,7 @@
         <!-- Cards -->
             <div class="d-sm-none d-md-inline">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Technology</h5>
@@ -108,27 +90,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title">Projects</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Software</h6>
+                            <ul>
+                                <li>Ultrack</li>
+                                <li><a href="https://github.com/ajborkowski/VendoMatic500">VendoMatic500</a></li>
+                                <li><a href="https://github.com/ajborkowski/NP-Reservation">NP-Reservation</a></li>
+                                <li><a href="https://github.com/ajborkowski/NP-Geek">NP-Geek</a></li>
+                                <li><a href="https://github.com/ajborkowski/Workout-Companion">Workout-Companion</a></li>
+                            </ul>
+                            <h6 class="card-subtitle mb-2 text-muted">Graphics</h6>
+                            <ul>
+                                <li><a href="https://skfb.ly/6MryO">Steampunk Concepts</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -141,7 +118,7 @@
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
+                                aria-expanded="false" aria-controls="collapseOne">
                                 Technology
                             </button>
                         </h5>
@@ -175,18 +152,25 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
+                                Graphics
                             </button>
                         </h5>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                            moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <h5 class="card-title">Projects</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Software</h6>
+                            <ul>
+                                <li>Ultrack</li>
+                                <li><a href="https://github.com/ajborkowski/VendoMatic500">VendoMatic500</a></li>
+                                <li><a href="https://github.com/ajborkowski/NP-Reservation">NP-Reservation</a></li>
+                                <li><a href="https://github.com/ajborkowski/NP-Geek">NP-Geek</a></li>
+                                <li><a href="https://github.com/ajborkowski/Workout-Companion">Workout-Companion</a></li>
+                            </ul>
+                            <h6 class="card-subtitle mb-2 text-muted">Graphics</h6>
+                            <ul>
+                                <li><a href="https://skfb.ly/6MryO">Steampunk Concepts</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -215,8 +199,12 @@
 
         </div> <!-- End Container -->
 
-        <footer class="page-footer font-small bg-dark pt-2">
-            <div class="footer-copyright text-right pr-3">© 2019 Andrew J. Borkowski</div>
+        <footer class="page-footer font-small bg-dark p-2 mt-2">
+            <div class="footer-copyright d-inline-block pr-3">Andrew J. Borkowski © 2019
+                <a class="foot-nav" href="https://github.com/ajborkowski"><i class="fab fa-github-square"></i></a>
+                <a class="foot-nav" href="https://sketchfab.com/ajborkowski"><i class="fas fa-cube"></i></a>
+                <a class="foot-nav" href="https://www.linkedin.com/in/ajborkowski/"><i class="fab fa-linkedin"></i></i></a>
+            </div>
         </footer>
 
     </div>
@@ -226,5 +214,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8adeac5ae8.js"></script>
   </body>
 </html>
