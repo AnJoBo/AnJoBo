@@ -3,6 +3,10 @@
     src: url(fonts/pixel.ttf);
 }
 
+body {
+    background-color: black;
+}
+
 .jumbotron {
     background: url('img/board.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -14,9 +18,39 @@
     border-radius: 0;
 }
 
+.card-gfx {
+    background: url('img/thatspark.jpg') no-repeat center center fixed;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: fill;
+    font-family: pixel;
+    border-radius: 0;
+}
+
+.card-gfx a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-tec {
+    background: url('img/binary.jpg') no-repeat center center fixed;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    font-family: pixel;
+    border-radius: 0;
+    color: white;
+}
+
+.card-gfx li,
+.card-tec li {
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
 .title {
     background-color: rgba(68, 68, 68, 0.829);
-    padding: 5%;
 }
 
 .bioToggle {
