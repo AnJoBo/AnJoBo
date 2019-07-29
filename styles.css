@@ -18,14 +18,23 @@ body {
     border-radius: 0;
 }
 
+.jumbo-bg * {
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+.titles {
+    display: inline-block;
+}
+
 .card-gfx {
     background: url('img/thatspark.jpg') no-repeat center center fixed;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: fill;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: pixel;
     border-radius: 0;
+    color: white;
 }
 
 .card-gfx a {
@@ -34,11 +43,11 @@ body {
 }
 
 .card-tec {
-    background: url('img/binary.jpg') no-repeat center center fixed;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: auto;
+    background: url('img/code.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: pixel;
     border-radius: 0;
     color: white;
@@ -46,7 +55,7 @@ body {
 
 .card-gfx li,
 .card-tec li {
-    background-color: rgba(255, 255, 255, 0.267);
+    background-color: rgba(255, 255, 255, 0.452);
 }
 
 .title {
@@ -62,5 +71,5 @@ body {
 }
 
 .list-group li:hover {
-    background-color: rgb(175, 175, 175);
+    background-color: rgba(175, 175, 175, 0.788);
 }
