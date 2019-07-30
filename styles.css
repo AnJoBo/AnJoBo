@@ -7,7 +7,7 @@ body {
     background-color: black;
 }
 
-.jumbotron {
+#head {
     background: url('img/board.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -17,7 +17,7 @@ body {
     border-radius: 0;
 }
 
-.jumbo-dat {
+#head .row {
     background-color: rgba(255, 255, 255, 0.616);
     color: black;
 }
