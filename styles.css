@@ -19,9 +19,11 @@ body {
 
 .jumbo-dat {
     background-color: rgba(255, 255, 255, 0.616);
-        color: black;
-
+    color: black;
 }
+
+#bio::-webkit-scrollbar { width: 0 !important }
+#bio { -ms-overflow-style: none; }
 
 .card-gfx {
     background: url('img/thatspark.jpg') no-repeat center center fixed;
@@ -47,7 +49,7 @@ body {
     background-size: cover;
     font-family: pixel;
     border-radius: 0;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .card-gfx li,
