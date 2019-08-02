@@ -13,17 +13,30 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: pixel;
     border-radius: 0;
 }
 
-#head .row {
-    background-color: rgba(255, 255, 255, 0.616);
-    color: black;
+img {
+    opacity: 0.8;
 }
 
-#bio::-webkit-scrollbar { width: 0 !important }
-#bio { -ms-overflow-style: none; }
+.pic-placeholder,
+#about {
+    margin-top: 10vh;
+}
+
+#title,
+#about {
+    background-color: rgba(252, 252, 252, 0.808);
+    border-radius: 3px;
+}
+
+#about {
+    overflow: scroll;
+}
+
+#about::-webkit-scrollbar { width: 0 !important }
+#about { -ms-overflow-style: none; }
 
 .card-gfx {
     background: url('img/thatspark.jpg') no-repeat center center fixed;
@@ -49,12 +62,15 @@ body {
     background-size: cover;
     font-family: pixel;
     border-radius: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
 }
 
-.card-gfx li,
 .card-tec li {
-    background-color: rgba(255, 255, 255, 0.233); 
+    background-color: rgba(255, 255, 255, 0.705); 
+}
+
+.card-gfx li {
+    background-color: rgba(255, 255, 255, 0.233);
 }
 
 .bioToggle {
@@ -66,3 +82,4 @@ body {
 .list-group li:hover {
     background-color: rgba(175, 175, 175, 0.788);
 }
+
